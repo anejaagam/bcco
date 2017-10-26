@@ -50,7 +50,7 @@ mysqli_close($conn);
 
     <!-- Teacher Info -->
     <h2 class="text-center" style="margin-top: 40px;">Teacher&#8217;s Info</h2>
-    <form action="http://www.inovaca.org/bcco/forms/update-teacher-info.php" method="post">
+    <form action="https://www.bcco-inovaca.org/forms/update-teacher-info" method="post">
       <div class="form-group">
         <input class="form-control" type="text" name="teacher_name" placeholder="Teacher&#8217;s Full Name" value="<?php echo($_SESSION['teacher_name']); ?>" required>
       </div>
@@ -97,7 +97,7 @@ mysqli_close($conn);
     <!-- End Registered Students -->
 
     <!-- Add a Student -->
-    <a href="http://www.inovaca.org/bcco/school-add-student.php" style="text-decoration: none;">
+    <a href="https://www.bcco-inovaca.org/school-add-student" style="text-decoration: none;">
       <button class="btn btn-default" style="margin: 0 auto; display: block; cursor: pointer;">Register A Student</button>
     </a>
     <!-- End Add a Student -->

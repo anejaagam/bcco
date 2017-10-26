@@ -38,7 +38,7 @@
     <div class="row contest-row">
         <div class="col-sm-6 offset-3 contest-box">
             <?php echo $_SESSION["mc_questions"][$question_to_display]?>
-            <form action="http://www.inovaca.org/bcco/commit-question.php" method="post">
+            <form action="https://www.bcco-inovaca.org/commit-question" method="post">
               <div class="radio">
                   <label>
                       <input type="radio" name="answer" value="A" <?php should_be_checked($question_to_display, "A") ?>>(A) <?php echo $_SESSION["mc_option_a"][$question_to_display]?></label>

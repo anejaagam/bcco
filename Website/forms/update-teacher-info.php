@@ -1,6 +1,6 @@
 <?php
 
-header("Location: http://www.inovaca.org/bcco/school/");
+header("Location: https://www.bcco-inovaca.org/school");
 
 if( !empty($_POST["teacher_name"]) && !empty($_POST["teacher_email"]) ) {
   include("../global/database-info.php");
@@ -15,7 +15,7 @@ if( !empty($_POST["teacher_name"]) && !empty($_POST["teacher_email"]) ) {
     session_start();
   }
 
-  $stmt = $conn->prepare('UPDATE `SchoolNames` SET `teacher_name` = ?, `teacher_email` = ? WHERE `school_id` = ?');
+  $stmt = $conn->prepare('UPDATE `Schools` SET `teacher_name` = ?, `teacher_email` = ? WHERE `school_id` = ?');
   $stmt->bind_param('sss', $_POST["teacher_name"], $_POST["teacher_email"], $_SESSION["school_id"]);
   $stmt->execute();
   $stmt->close();

@@ -26,7 +26,7 @@ if( isset($_POST["school_id"]) && !empty($_POST["school_id"]) ) {
 
 // Prevent SQL injection attacks by preparing the statement on the server then
 // passing the student ID as a parameter.
-$stmt = $conn->prepare('SELECT name, id, teacher_name, teacher_email FROM SchoolNames WHERE school_id = ?');
+$stmt = $conn->prepare('SELECT name, id, teacher_name, teacher_email FROM `Schools` WHERE school_id = ?');
 $stmt->bind_param('s', $_SESSION["school_id"]);
 $stmt->execute();
 $stmt->bind_result($school_name, $_SESSION["school_row_id"], $_SESSION["teacher_name"], $_SESSION["teacher_email"]);

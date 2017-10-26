@@ -54,7 +54,7 @@ if( !$student_id_exists ) {
   // Get the student's school name from the database
   // A school ID is used to make it easy to update the school name without having
   // to modify all the students' rows.
-  $stmt_2 = $conn->prepare('SELECT name FROM SchoolNames WHERE school_id = ?');
+  $stmt_2 = $conn->prepare('SELECT name FROM Schools WHERE school_id = ?');
   $stmt_2->bind_param('s', $school_id);
   $stmt_2->execute();
   $stmt_2->bind_result($school_name);

@@ -32,5 +32,5 @@ $stmt->close();
 ?>
 
 <script>
-window.location.href = "http://www.inovaca.org/bcco/school/";
+window.location.href = "https://www.bcco-inovaca.org/school";
 </script>

@@ -23,7 +23,7 @@
       <!-- End Heading for table for Multiple Choice Qs -->
 
       <!-- Show Question Form, Allows for answers to be edited -->
-      <form action="http://www.inovaca.org/bcco/show-question.php" method="post">
+      <form action="https://www.bcco-inovaca.org/show-question" method="post">
 
         <!-- Table for Multiple Choice Qs -->
         <table id="multiplechoice">
@@ -194,7 +194,7 @@
 
       <!-- Submit Button -->
 
-    <form action="http://www.inovaca.org/bcco/finish.php" method="post" onsubmit="return confirm('You will not be able to change any of your answers. Press OK if you are sure you are done.');">
+    <form action="https://www.bcco-inovaca.org/finish" method="post" onsubmit="return confirm('You will not be able to change any of your answers. Press OK if you are sure you are done.');">
       <input type="submit" class="btn btn-default" style="margin:0 auto; display:block; width:160px; margin-bottom: 16px;" name="submit" value="Submit">
       <input type="hidden" name="finished_willingly" value="true">
     </form>

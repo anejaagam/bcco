@@ -9,7 +9,7 @@ $mail_to = 'inovacomputerassociation@gmail.com';
 if( $field_subject !== '' ) {
 		$subject = $field_subject;
 } else {
-		$subject = 'Message to inovaca.org';
+		$subject = 'Message to bcco-inovaca.org';
 }
 
 //If a name was entered, continue
@@ -28,14 +28,14 @@ if( !empty ( $field_name ) && !empty ($field_message) ) {
 			if ($mail_status) { ?>
 				<script language="javascript" type="text/javascript">
 					alert("Thank you for the message. We'll get back to you as soon as possible.");
-					window.location = '/index.html';
+					window.location = '/';
 				</script>
 			<?php
 			}
 			else { ?>
 				<script language="javascript" type="text/javascript">
 					alert('Message failed.');
-					window.location = '/index.html';
+					window.location = '/';
 				</script>
 			<?php
 			}
@@ -43,7 +43,7 @@ if( !empty ( $field_name ) && !empty ($field_message) ) {
 		else { ?>
 			<script language="javascript" type="text/javascript">
 				alert('Please enter a valid email address');
-				window.location = '/index.html';
+				window.location = '/';
 			</script>
 		<?php
 		}
@@ -51,7 +51,7 @@ if( !empty ( $field_name ) && !empty ($field_message) ) {
 else { ?>
 	<script language="javascript" type="text/javascript">
 		alert('One or more fields were empty');
-		window.location = '/index.html';
+		window.location = '/';
 	</script>
 <?php
 }

@@ -26,17 +26,14 @@
             </div>
         </div>
         <div style="padding:140px;">
-            <center>
-                <img src="/bcco/img/bcco-logo.png" alt="BCCO Logo" style="width:140px;">
-            </center>
+            <img src="/img/bcco-logo.png" alt="BCCO Logo" style="width:140px; margin: auto;">
+
             <h1 style="text-align: center; font-size: 75px;">British Columbia Computing Olympiad</h1>
             <!-- End Site Name -->
 
             <!-- Subtitle -->
             <p>Presented by <a href="http://www.inovaca.org" style="color: white;"><strong><em>Inova Computer Association</em></strong></a></p>
             <!-- End Subtitle -->
-
-            <a href=""><img src="https://scontent-sea1-1.xx.fbcdn.net/v/t34.0-12/22497354_1434328349969279_2086093501_n.png?oh=045cf3190aff635a62c653839860e323&oe=59E2BC53" alt="" width="100px;" style="margin-top:5%;"></a>
         </div>
     </section>
     <!-- End Hero Image -->
@@ -67,14 +64,14 @@
                 <!-- Teacher Login -->
                 <div class="col-md-6 text-center" style="border-left: solid #FAFAFA 3px; padding: 16px 0px 16px 0px;">
                     <center>
-                        <form action="http://www.inovaca.org/bcco/school-login.php" method="post" style="display:inline;">
+                        <form action="https://www.bcco-inovaca.org/school-login" method="post" style="display:inline;">
                             <label style="margin-right:12px;">Teacher:</label>
                             <input type="text" name="school_id" placeholder="School ID" required style="margin-right:8px;">
                             <button type="submit" class="btn btn-default btn-login">Log In</button>
                         </form>
                         <br>
                         <br>
-                        <form action="http://www.inovaca.org/bcco/student-login.php" method="post" style="display:inline;">
+                        <form action="https://www.bcco-inovaca.org/student-login" method="post" style="display:inline;">
                             <label style="margin-right:10px;">Student:</label>
                             <input type="text" name="student_id" placeholder="Student ID" required style="margin-right:8px;">
                             <button type="submit" class="btn btn-default btn-login">Log In</button>
@@ -141,10 +138,6 @@
                         </p>
                     </div>
                 </div>
-                <br>
-                <center>
-                    <p style="color:green;">For full details of the BCCO contest, please visit www.bcco.ca/documentation.</p>
-                </center>
             </div>
         </section>
         <!-- End Contest Explanation -->
@@ -186,14 +179,13 @@
         <!-- end Sponsors -->
 
         <!-- Contact Form -->
-        <a class="anchor" id="contact"></a>
         <section id="contact" style="background-color:#FAFAFA;padding: 16px 0px 16px 0px;">
             <div class="container">
                 <hr>
                 <h2 class="text-center" style="font-weight:bold;">Contact Us</h2>
                 <hr>
                 <div style="margin-left:20%; margin-right:20%;">
-                    <form style="margin-left: 3%; margin-right: 3%;" action="./forms/contact.php" method="post">
+                    <form style="margin-left: 3%; margin-right: 3%;" action="./forms/contact" method="post">
                         <div class="form-group">
                             <label style="font-weight:bold;">Name:</label>
                             <input class="form-control" type="text" placeholder="Name" name="cf_name" required>
