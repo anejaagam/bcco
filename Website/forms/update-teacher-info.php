@@ -1,7 +1,5 @@
 <?php
 
-header("Location: https://www.bcco-inovaca.org/school");
-
 if( !empty($_POST["teacher_name"]) && !empty($_POST["teacher_email"]) ) {
   include("../global/database-info.php");
   $conn = new mysqli($servername, $username, $password, $dbname);
@@ -23,5 +21,7 @@ if( !empty($_POST["teacher_name"]) && !empty($_POST["teacher_email"]) ) {
   $_SESSION["teacher_name"] = $_POST["teacher_name"];
   $_SESSION["teacher_email"] = $_POST["teacher_email"];
 }
+
+header("Location: https://www.bcco-inovaca.org/school");
 
 ?>
