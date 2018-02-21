@@ -6,10 +6,10 @@
 
 // Create and check connection to the database
 include("./global/database-info.php");
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if( $conn->connect_error ) {
-    die("Connection failed: " . $conn->connect_error);
+try {
+  $conn = new mysqli($servername, $username, $password, $dbname);
+} catch( Exception $e ) {
+  die("Connection failed: " . $e->getMessage());
 }
 
 // session_start() must be called before _SESSION variables can be used.
