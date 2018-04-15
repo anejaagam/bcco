@@ -106,7 +106,7 @@
                         <h2>When</h2>
                     </div>
                     <div class="col-sm-10">
-                        <p>The contest will be held on December 5th, 2017 from 9:00-10:00AM. The time limit for the BCCO is 1 hour.</p>
+                        <p>The contest will be held on May 24th, 2018 from 9:00-10:00AM. The time limit for the BCCO is 1 hour.</p>
                     </div>
                 </div>
                 <hr>
