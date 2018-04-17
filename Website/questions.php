@@ -15,7 +15,12 @@ if( count($_SESSION["mc_questions"]) == 0 ) {
   }
 
   // Load multiple choice questions from MySQL database
-  $stmt = mysqli_query($conn, "SELECT * FROM MCQuestions");
+  if( $_SESSION["is_demo"] ) {
+    $stmt = mysqli_query($conn, "SELECT * FROM DemoMCQuestions");
+  } else {
+    $stmt = mysqli_query($conn, "SELECT * FROM MCQuestions");
+  }
+
   $_SESSION["mc_questions"] = array();
   $_SESSION["mc_option_a"] = array();
   $_SESSION["mc_option_b"] = array();
@@ -33,7 +38,11 @@ if( count($_SESSION["mc_questions"]) == 0 ) {
   }
 
   // Load free response questions
-  $stmt = mysqli_query($conn, "SELECT question FROM FRQuestions");
+  if( $_SESSION["is_demo"] ) {
+    $stmt = mysqli_query($conn, "SELECT question FROM DemoFRQuestions");
+  } else {
+    $stmt = mysqli_query($conn, "SELECT question FROM FRQuestions");
+  }
   $_SESSION["fr_questions"] = array();
 
   while($row = mysqli_fetch_assoc($stmt)) {

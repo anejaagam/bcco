@@ -20,6 +20,7 @@ if( session_id() == '' ) { // Session has not started
 // Get the student ID from the login form.
 if( isset($_POST["student_id"]) && !empty($_POST["student_id"]) ) {
   $_SESSION["student_id"] = $_POST["student_id"];
+  $_SESSION["is_demo"] = $_SESSION["student_id"] == "DEMO";
 } else {
   die("Cannot begin the test. Student ID is empty.");
 }
@@ -71,11 +72,13 @@ if( !$student_id_exists ) {
     $one_hour_in_seconds = 1 * 60 * 60;
     $_SESSION["end_time"] = $start_time + $one_hour_in_seconds;
 
-    $stmt_3 = $conn->prepare('UPDATE Students SET end_time = ? WHERE id = ?');
-    $stmt_3->bind_param('ss', $_SESSION["end_time"], $_SESSION["student_row_id"]);
-    $stmt_3->execute();
-    $stmt_3->close();
-  } else {
+    if( $_SESSION["is_demo"] ) {
+      $stmt_3 = $conn->prepare('UPDATE Students SET end_time = ? WHERE id = ?');
+      $stmt_3->bind_param('ss', $_SESSION["end_time"], $_SESSION["student_row_id"]);
+      $stmt_3->execute();
+      $stmt_3->close();
+    }
+  } else if( !$_SESSION["is_demo"] ){
     // Do not allow the student to log in if they ran out of time on
     // their test.
     $current_time = time();
