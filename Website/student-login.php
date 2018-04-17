@@ -20,7 +20,7 @@ if( session_id() == '' ) { // Session has not started
 // Get the student ID from the login form.
 if( isset($_POST["student_id"]) && !empty($_POST["student_id"]) ) {
   $_SESSION["student_id"] = $_POST["student_id"];
-  $_SESSION["is_demo"] = $_SESSION["student_id"] == "DEMO";
+  $_SESSION["is_demo"] = $_SESSION["student_id"] === "DEMO";
 } else {
   die("Cannot begin the test. Student ID is empty.");
 }
