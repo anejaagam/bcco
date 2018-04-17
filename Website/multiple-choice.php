@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <h1 class="title">BC Computing Olympiad 2017</h1>
+    <h1 class="title">BC Computing Olympiad 2018</h1>
 
     <!-- Student Info -->
     <p class="text-center student-info"><?php echo $_SESSION["student_name"] ?> | <?php echo $_SESSION["school_name"] ?></p>

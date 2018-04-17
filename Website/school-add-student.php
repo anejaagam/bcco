@@ -18,7 +18,7 @@ if( session_id() == '' ) { // Session has not started
 
   <body class="container">
 
-      <h1 class="title">BC Computing Olympiad 2017</h1>
+      <h1 class="title">BC Computing Olympiad 2018</h1>
       <p class="text-center"><?php echo $_SESSION["school_name"] ?></p>
 
       <!-- Register A Student Form -->
