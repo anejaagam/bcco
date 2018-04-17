@@ -72,7 +72,7 @@ if( !$student_id_exists ) {
     $one_hour_in_seconds = 1 * 60 * 60;
     $_SESSION["end_time"] = $start_time + $one_hour_in_seconds;
 
-    if( $_SESSION["is_demo"] ) {
+    if( !$_SESSION["is_demo"] ) {
       $stmt_3 = $conn->prepare('UPDATE Students SET end_time = ? WHERE id = ?');
       $stmt_3->bind_param('ss', $_SESSION["end_time"], $_SESSION["student_row_id"]);
       $stmt_3->execute();
