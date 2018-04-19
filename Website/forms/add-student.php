@@ -1,7 +1,7 @@
 <?php
 
 function generate_student_id() {
-  // This may need to be updated with a test to guarantee uniqueness.
+  // This may need to be updated with a contest to guarantee uniqueness.
   return uniqid();
 }
 

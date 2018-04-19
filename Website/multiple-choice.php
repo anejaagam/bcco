@@ -23,9 +23,9 @@
     <p class="text-center student-info"><?php echo $_SESSION["student_name"] ?> | <?php echo $_SESSION["school_name"] ?></p>
     <!-- End Student Info -->
 
-    <!-- Test Countdown, Updated with JS -->
-    <p class="text-center" id="countdown">You have 60 minutes left to write the test.</p>
-    <!-- End Test Countdown -->
+    <!-- Contest Countdown, Updated with JS -->
+    <p class="text-center" id="countdown">You have 60 minutes left to write the contest.</p>
+    <!-- End Contest Countdown -->
 
     <!-- Contest Area -->
     <?php function should_be_checked($question_to_display, $question_letter) {

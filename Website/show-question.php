@@ -21,7 +21,7 @@ if( $go_to_next == "Next" ) {
 } else if( $go_to_next == "Previous" ) {
   $question_to_display = $previous_question - 1;
 } else if( $go_to_next == "Finish" || $go_to_next == "Save" ) {
-  // End the test
+  // End the contest
   include("./review.php");
   exit(0);
 } else {

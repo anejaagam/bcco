@@ -2,7 +2,7 @@
 // Pre: student_id is passed by post.
 // Post: a session was started
 //       how-question.php is used to display the first question in the contest.
-//       The test's end time is one hour from now.
+//       The contest's end time is one hour from now.
 
 // Create and check connection to the database
 include("./global/database-info.php");

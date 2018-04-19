@@ -2,7 +2,7 @@
 // Pre: student_id is passed by post.
 // Post: a session was started
 //       how-question.php is used to display the first question in the contest.
-//       The test's end time is one hour from now.
+//       The contest's end time is one hour from now.
 
 // Create and check connection to the database
 include("./global/database-info.php");
@@ -22,7 +22,7 @@ if( isset($_POST["student_id"]) && !empty($_POST["student_id"]) ) {
   $_SESSION["student_id"] = $_POST["student_id"];
   $_SESSION["is_demo"] = $_SESSION["student_id"] === "DEMO";
 } else {
-  die("Cannot begin the test. Student ID is empty.");
+  die("Cannot begin the contest. Student ID is empty.");
 }
 
 // Prevent SQL injection attacks by preparing the statement on the server then
@@ -42,7 +42,7 @@ if( !$student_id_exists ) {
   $_SESSION["student_name"] = $first_name . " " . $last_name;
 
   // The default value of end_time is 0.
-  // end_time will be empty if a test session has not been started
+  // end_time will be empty if a contest session has not been started
   // for this student.
   if( $end_time != 0 ) {
     $_SESSION["end_time"] = $end_time;
@@ -65,7 +65,7 @@ if( !$student_id_exists ) {
   $_SESSION["school_name"] = $school_name;
 
   if( !isset($_SESSION["end_time"]) || $_SESSION["end_time"] == 0 ) {
-    // Start the test timer. It is stored in the database in case the student
+    // Start the contest timer. It is stored in the database in case the student
     // tries to log out and log in again to get more time. It is stored in
     // a session variable to reduce the number of database queries.
     $start_time = time();
@@ -80,11 +80,11 @@ if( !$student_id_exists ) {
     }
   } else if( !$_SESSION["is_demo"] ){
     // Do not allow the student to log in if they ran out of time on
-    // their test.
+    // their contest.
     $current_time = time();
 
     if( $current_time > $_SESSION["end_time"] ) {
-      die("Cannot begin the test. An hour has elapsed since your first login.");
+      die("Cannot begin the contest. An hour has elapsed since your first login.");
     }
   }
 }

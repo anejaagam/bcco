@@ -25,7 +25,7 @@ if( isset($answer) && !empty($answer) && isset($question) ) {
   $_SESSION["committed_answers"][$question] = $answer;
 }
 
-// Display a different question or end the test depending on the time limit.
+// Display a different question or end the contest depending on the time limit.
 if( time() < $_SESSION["end_time"] ) {
   include("./show-question.php");
 } else {

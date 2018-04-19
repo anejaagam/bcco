@@ -105,7 +105,7 @@ mysqli_close($conn);
     <!-- Results Hidden
     <h2 class="text-center" style="margin-top: 40px;">Results</h2>
 
-    <p class="text-center">Students will only be listed if they wrote the test.</p>
+    <p class="text-center">Students will only be listed if they wrote the contest.</p>
 
     <table class="table table-striped text-center">
       <thead>
