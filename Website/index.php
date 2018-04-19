@@ -85,6 +85,22 @@
         </section>
         <!-- End Login Forms -->
 
+        <!-- Start sample test-->
+        <section style="background-color:#FFFFFF;">
+           <div class="container" style="padding-top:16px;padding-bottom:16px;">
+             <hr>
+             <h2 class="text-center" style="font-weight:bold;">SAMPLE TEST</h2>
+             <hr>
+             <p style="text-align:center;">Practice using our test interface.</p>
+             <form action="https://www.bcco-inovaca.org/student-login" method="post" style="text-align:center;margin-top: 30px;">
+                 <input type="hidden" name="student_id" value="DEMO">
+                 <button type="submit" class="btn btn-default btn-login">Start Sample Test</button>
+             </form>
+             <hr>
+           </div>
+       </section>
+       <!-- End sample test-->
+
         <!-- Contest Explanation -->
         <a class="anchor" id="about"></a>
         <section style="background-color:#FAFAFA;">
