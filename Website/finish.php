@@ -12,7 +12,7 @@ if( session_id() == '' ) { // Session has not started
   session_start();
 }
 
-if( $_SESSION["is_demo"] ) {
+if( !$_SESSION["is_demo"] ) {
   $stmt = $conn->prepare('UPDATE Students SET answer_1 = ?, answer_2 = ?, answer_3 = ?, answer_4 = ?,
                           answer_5 = ?, answer_6 = ?, answer_7 = ?, answer_8 = ?, answer_9 = ?, answer_10 = ?,
                           answer_11 = ?, answer_12 = ?, answer_13 = ?, answer_14 = ?, answer_15 = ?,
