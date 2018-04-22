@@ -33,6 +33,14 @@ if( !isset($_POST["is_editing"]) ) {
     <input type="submit" name="jump_to" value="15" style="margin-left:14px;" class="nav-square frq' . pick_square_class($question_to_display, 15) . '">
     <input type="submit" name="jump_to" value="16" class="nav-square frq' . pick_square_class($question_to_display, 16) . '">
     <input type="submit" name="jump_to" value="17" class="nav-square frq' . pick_square_class($question_to_display, 17) . '">
+
+    <input type="submit" name="jump_to" value="18" style="margin-left:14px;" class="nav-square frq' . pick_square_class($question_to_display, 18) . '">
+    <input type="submit" name="jump_to" value="19" class="nav-square frq' . pick_square_class($question_to_display, 19) . '">
+    <input type="submit" name="jump_to" value="20" class="nav-square frq' . pick_square_class($question_to_display, 20) . '">
+
+    <input type="submit" name="jump_to" value="21" style="margin-left:14px;" class="nav-square frq' . pick_square_class($question_to_display, 21) . '">
+    <input type="submit" name="jump_to" value="22" class="nav-square frq' . pick_square_class($question_to_display, 22) . '">
+    <input type="submit" name="jump_to" value="23" class="nav-square frq' . pick_square_class($question_to_display, 23) . '">
     <!-- End Line of Navigation Squares -->
 
   </div>

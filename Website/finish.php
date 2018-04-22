@@ -16,14 +16,17 @@ if( !$_SESSION["is_demo"] ) {
   $stmt = $conn->prepare('UPDATE Students SET answer_1 = ?, answer_2 = ?, answer_3 = ?, answer_4 = ?,
                           answer_5 = ?, answer_6 = ?, answer_7 = ?, answer_8 = ?, answer_9 = ?, answer_10 = ?,
                           answer_11 = ?, answer_12 = ?, answer_13 = ?, answer_14 = ?, answer_15 = ?,
-                          answer_16 = ?, answer_17 = ?, answer_18 = ? WHERE id = ?');
+                          answer_16 = ?, answer_17 = ?, answer_18 = ?, answer_19 = ?, answer_20 = ?,
+                          answer_21 = ?, answer_22 = ?, answer_23 = ?, answer_24 = ?, WHERE id = ?');
   $stmt->bind_param('sssssssssssssssssss', $_SESSION["committed_answers"][0], $_SESSION["committed_answers"][1],
         $_SESSION["committed_answers"][2], $_SESSION["committed_answers"][3], $_SESSION["committed_answers"][4],
         $_SESSION["committed_answers"][5], $_SESSION["committed_answers"][6], $_SESSION["committed_answers"][7],
         $_SESSION["committed_answers"][8], $_SESSION["committed_answers"][9], $_SESSION["committed_answers"][10],
         $_SESSION["committed_answers"][11], $_SESSION["committed_answers"][12], $_SESSION["committed_answers"][13],
         $_SESSION["committed_answers"][14], $_SESSION["committed_answers"][15], $_SESSION["committed_answers"][16],
-        $_SESSION["committed_answers"][17], $_SESSION["student_row_id"]);
+        $_SESSION["committed_answers"][17], $_SESSION["committed_answers"][18], $_SESSION["committed_answers"][19],
+        $_SESSION["committed_answers"][20], $_SESSION["committed_answers"][21], $_SESSION["committed_answers"][22],
+        $_SESSION["committed_answers"][23], $_SESSION["student_row_id"]);
   $stmt->execute();
   $stmt->close();
 }

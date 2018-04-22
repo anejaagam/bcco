@@ -45,7 +45,17 @@
               <?php include("./global/contest-navigation-squares.php") ?>
             </form>
 
-            <p class="text-center col-sm-12">Free Response Question: <?php echo $question_display_number - $_SESSION["number_of_mc_questions"]?>/<?php echo $_SESSION["number_of_fr_questions"] ?></p>
+            <p class="text-center col-sm-12">Free Response Question: <?php
+                // Harcoded question numbers to display
+                // Less scalable, but a fast solution
+                $fr_question_number = $question_display_number - $_SESSION["number_of_mc_questions"];
+                if( $fr_question_number == 1 || $fr_question_number == 2 || $fr_question_number == 3 ) {
+                  echo "1/3";
+                } else if( $fr_question_number == 4 || $fr_question_number == 5 || $fr_question_number == 6 ) {
+                  echo "2/3";
+                } else if( $fr_question_number == 7 || $fr_question_number == 8 || $fr_question_number == 9 ) {
+                  echo "3/3";
+                } ?></p>
         </div>
     </div>
     <!-- End Contest Area -->

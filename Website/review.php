@@ -9,7 +9,6 @@
       <meta name="robots" content="noindex">
   </head>
 
-
   <body>
       <h1 class="title">BC Computing Olympiad 2018</h1>
 
@@ -35,13 +34,11 @@
                 <th class="icon-h">Edit</th>
             </tr>
 
-
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][0]?></td>
                 <td class="answer"><?php if( isset($_SESSION["committed_answers"][0]) ){ echo $_SESSION["committed_answers"][0]; } ?></td>
                 <td class="icon"><button name="jump_to" value="0" class="fa fa-pencil"></button></td>
             </tr>
-
 
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][1]?></td>
@@ -49,13 +46,11 @@
                 <td class="icon"><button name="jump_to" value="1" class="fa fa-pencil"></button></td>
             </tr>
 
-
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][2]?></td>
                 <td class="answer"><?php if( isset($_SESSION["committed_answers"][2]) ){ echo $_SESSION["committed_answers"][2]; } ?></td>
                 <td class="icon"><button name="jump_to" value="2" class="fa fa-pencil"></button></td>
             </tr>
-
 
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][3]?></td>
@@ -63,13 +58,11 @@
                 <td class="icon"><button name="jump_to" value="3" class="fa fa-pencil"></button></td>
             </tr>
 
-
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][4]?></td>
                 <td class="answer"><?php if( isset($_SESSION["committed_answers"][4]) ){ echo $_SESSION["committed_answers"][4]; } ?></td>
                 <td class="icon"><button name="jump_to" value="4" class="fa fa-pencil"></button></td>
             </tr>
-
 
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][5]?></td>
@@ -83,13 +76,11 @@
                 <td class="icon"><button name="jump_to" value="6" class="fa fa-pencil"></button></td>
             </tr>
 
-
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][7]?></td>
                 <td class="answer"><?php if( isset($_SESSION["committed_answers"][7]) ){ echo $_SESSION["committed_answers"][7]; } ?></td>
                 <td class="icon"><button name="jump_to" value="7" class="fa fa-pencil"></button></td>
             </tr>
-
 
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][8]?></td>
@@ -97,13 +88,11 @@
                 <td class="icon"><button name="jump_to" value="8" class="fa fa-pencil"></button></td>
             </tr>
 
-
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][9]?></td>
                 <td class="answer"><?php if( isset($_SESSION["committed_answers"][9]) ){ echo $_SESSION["committed_answers"][9]; } ?></td>
                 <td class="icon"><button name="jump_to" value="9" class="fa fa-pencil"></button></td>
             </tr>
-
 
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][10]?></td>
@@ -111,13 +100,11 @@
                 <td class="icon"><button name="jump_to" value="10" class="fa fa-pencil"></button></td>
             </tr>
 
-
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][11]?></td>
                 <td class="answer"><?php if( isset($_SESSION["committed_answers"][11]) ){ echo $_SESSION["committed_answers"][11]; } ?></td>
                 <td class="icon"><button name="jump_to" value="11" class="fa fa-pencil"></button></td>
             </tr>
-
 
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][12]?></td>
@@ -125,13 +112,11 @@
                 <td class="icon"><button name="jump_to" value="12" class="fa fa-pencil"></button></td>
             </tr>
 
-
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][13]?></td>
                 <td class="answer"><?php if( isset($_SESSION["committed_answers"][13]) ){ echo $_SESSION["committed_answers"][13]; } ?></td>
                 <td class="icon"><button name="jump_to" value="13" class="fa fa-pencil"></button></td>
             </tr>
-
 
             <tr>
                 <td><?php echo $_SESSION["mc_questions"][14]?></td>
@@ -159,13 +144,11 @@
               <th class="icon-h">Edit</th>
           </tr>
 
-
           <tr>
               <td><?php echo $_SESSION["fr_questions"][0]?></td>
               <td class="answer"><?php if( isset($_SESSION["committed_answers"][15]) ){ echo $_SESSION["committed_answers"][15]; } ?></td>
               <td class="icon"><button name="jump_to" value="15" class="fa fa-pencil"></button></td>
           </tr>
-
 
           <tr>
               <td><?php echo $_SESSION["fr_questions"][1]?></td>
@@ -173,13 +156,47 @@
               <td class="icon"><button name="jump_to" value="16" class="fa fa-pencil"></button></td>
           </tr>
 
-
           <tr>
               <td><?php echo $_SESSION["fr_questions"][2]?></td>
               <td class="answer"><?php if( isset($_SESSION["committed_answers"][17]) ){ echo $_SESSION["committed_answers"][17]; } ?></td>
               <td class="icon"><button name="jump_to" value="17" class="fa fa-pencil"></button></td>
           </tr>
 
+          <tr>
+              <td><?php echo $_SESSION["fr_questions"][3]?></td>
+              <td class="answer"><?php if( isset($_SESSION["committed_answers"][18]) ){ echo $_SESSION["committed_answers"][15]; } ?></td>
+              <td class="icon"><button name="jump_to" value="18" class="fas pencil-alt"></button></td>
+          </tr>
+
+          <tr>
+              <td><?php echo $_SESSION["fr_questions"][4]?></td>
+              <td class="answer"><?php if( isset($_SESSION["committed_answers"][19]) ){ echo $_SESSION["committed_answers"][16]; } ?></td>
+              <td class="icon"><button name="jump_to" value="19" class="fas pencil-alt"></button></td>
+          </tr>
+
+          <tr>
+              <td><?php echo $_SESSION["fr_questions"][5]?></td>
+              <td class="answer"><?php if( isset($_SESSION["committed_answers"][20]) ){ echo $_SESSION["committed_answers"][17]; } ?></td>
+              <td class="icon"><button name="jump_to" value="20" class="fas pencil-alt"></button></td>
+          </tr>
+
+          <tr>
+              <td><?php echo $_SESSION["fr_questions"][6]?></td>
+              <td class="answer"><?php if( isset($_SESSION["committed_answers"][21]) ){ echo $_SESSION["committed_answers"][15]; } ?></td>
+              <td class="icon"><button name="jump_to" value="21" class="fas pencil-alt"></button></td>
+          </tr>
+
+          <tr>
+              <td><?php echo $_SESSION["fr_questions"][7]?></td>
+              <td class="answer"><?php if( isset($_SESSION["committed_answers"][22]) ){ echo $_SESSION["committed_answers"][16]; } ?></td>
+              <td class="icon"><button name="jump_to" value="22" class="fas pencil-alt"></button></td>
+          </tr>
+
+          <tr>
+              <td><?php echo $_SESSION["fr_questions"][8]?></td>
+              <td class="answer"><?php if( isset($_SESSION["committed_answers"][23]) ){ echo $_SESSION["committed_answers"][17]; } ?></td>
+              <td class="icon"><button name="jump_to" value="23" class="fas pencil-alt"></button></td>
+          </tr>
 
       </table>
       <!-- End Table for Free Response Qs -->
