@@ -154,6 +154,9 @@
                         </p>
                     </div>
                 </div>
+                <center>
+                    <p>To register for this contest, please talk to your computer science/math teacher and they will sign you up. If your teacher doesn't have school login, please contact us at bcco@inovaca.org</p>
+                </center>
             </div>
         </section>
         <!-- End Contest Explanation -->
@@ -183,12 +186,6 @@
                 </div>
                 <div class="col-sm-6">
                     <a href="https://www.redacademy.com"><img src="/img/sponsors/redacademy.png" alt="" style="height:100px;"></a>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="http://www.pacificacademy.net/"><img src="/img/sponsors/pacificacademy.png" alt="" style="height:160px;"></a>
                 </div>
             </div>
         </div>
