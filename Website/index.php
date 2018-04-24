@@ -94,7 +94,7 @@
              <p style="text-align:center;">Practice using our contest interface.</p>
              <form action="https://www.bcco-inovaca.org/student-login" method="post" style="text-align:center;margin-top: 30px;">
                  <input type="hidden" name="student_id" value="DEMO">
-                 <button type="submit" class="btn btn-default btn-login">Start Sample Contest</button>
+                 <button type="submit" class="blue-btn btn-login">Start Sample Contest</button>
              </form>
              <hr>
            </div>
