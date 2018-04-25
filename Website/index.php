@@ -113,7 +113,7 @@
                         <h2>What</h2>
                     </div>
                     <div class="col-sm-10">
-                        <p>The British Columbia Computing Olympiad (BCCO) is a contest that tests computer-related logic and thinking skills for students in grades 7 to 9. It is free to write either online or on paper, and consists of 15 multiple choice and 3 free response questions. No prior knowledge of computer science is required to write the BCCO; any questions that require background knowledge will provide it in the question.</p>
+                        <p>The British Columbia Computing Olympiad (BCCO) is a contest that tests computer-related logic and thinking skills for students in grades 7 to 9. It is free to write either online or on paper, and consists of 15 multiple choice and 3 free response questions. No prior knowledge of computer science is required to write the BCCO; any questions that require background knowledge will provide it in the question. For more detailed information, please read our <a href="http://www.bcco-inovaca.org/description.pdf">contest specifications</a>.</p>
                     </div>
                 </div>
                 <hr>
@@ -140,7 +140,7 @@
                         <h2>Who</h2>
                     </div>
                     <div class="col-sm-10">
-                        <p>The contest is avaliable to anyone in grades 7 to 9 in an official school of British Columbia.
+                        <p>The contest is available to anyone in grades 7 to 9 in an official school of British Columbia.
                         </p>
                     </div>
                 </div>
