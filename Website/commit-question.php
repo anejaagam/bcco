@@ -22,7 +22,9 @@ if( isset($answer) && !empty($answer) && isset($question) ) {
     }
   }
 
-  $_SESSION["committed_answers"][$question] = $answer;
+  if( strlen($answer) <= 256 ) {
+    $_SESSION["committed_answers"][$question] = $answer;
+  }
 }
 
 // Display a different question or end the contest depending on the time limit.

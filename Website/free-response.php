@@ -37,7 +37,7 @@
         <div class="col-sm-6 offset-3 contest-box">
             <?php echo $_SESSION["fr_questions"][$question_to_display - $_SESSION["number_of_mc_questions"]]?>
             <form action="https://www.bcco-inovaca.org/commit-question" method="post">
-              <input style="width:100%;" type="text" name="answer" value="<?php committed_answer($question_to_display) ?>">
+              <input style="width:100%;" type="text" maxlength="256" name="answer" value="<?php committed_answer($question_to_display) ?>">
 
               <input type="hidden" name="question" value="<?php echo $question_to_display ?>">
 
